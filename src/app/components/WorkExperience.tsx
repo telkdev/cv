@@ -57,6 +57,14 @@ function WorkPeriod({ start, end }: WorkPeriodProps) {
   );
 }
 
+function Location({ location }: { location: string }) {
+  return (
+    <div className="text-sm text-gray-500" aria-label={`Location: ${location}`}>
+      {location}
+    </div>
+  );
+}
+
 interface CompanyLinkProps {
   company: WorkExperience["company"];
   link: WorkExperience["link"];
@@ -88,7 +96,7 @@ interface WorkExperienceItemProps {
  * Handles responsive layout for badges (mobile/desktop)
  */
 function WorkExperienceItem({ work }: WorkExperienceItemProps) {
-  const { company, link, badges, title, start, end, description } = work;
+  const { company, link, badges, title, start, end, description, location } = work;
 
   return (
     <Card className="py-1 print:py-0">
@@ -101,7 +109,10 @@ function WorkExperienceItem({ work }: WorkExperienceItemProps) {
               badges={badges}
             />
           </h3>
-          <WorkPeriod start={start} end={end} />
+          <div>
+            <WorkPeriod start={start} end={end} />
+            <Location location={location} />
+          </div>
         </div>
 
         <h4 className="font-mono text-sm font-semibold leading-none print:text-[12px]">
@@ -110,7 +121,7 @@ function WorkExperienceItem({ work }: WorkExperienceItemProps) {
       </CardHeader>
 
       <CardContent>
-        <div className="mt-2 text-xs text-foreground/80 print:mt-1 print:text-[10px] text-pretty">
+        <div className="mt-2 text-pretty text-xs text-foreground/80 print:mt-1 print:text-[10px]">
           {description}
         </div>
         <div className="mt-2">
@@ -138,7 +149,11 @@ export function WorkExperience({ work }: WorkExperienceProps) {
       <h2 className="text-xl font-bold" id="work-experience">
         Work Experience
       </h2>
-      <div className="space-y-4 print:space-y-0" role="feed" aria-labelledby="work-experience">
+      <div
+        className="space-y-4 print:space-y-0"
+        role="feed"
+        aria-labelledby="work-experience"
+      >
         {work.map((item) => (
           <article key={`${item.company}-${item.start}`} role="article">
             <WorkExperienceItem work={item} />
