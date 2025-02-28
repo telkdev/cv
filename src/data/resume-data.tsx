@@ -6,7 +6,7 @@ import {
   NSNLogo,
   ParabolLogo,
 } from "@/images/logos";
-import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
+import { GitHubIcon, LinkedInIcon } from "@/components/icons";
 
 export const RESUME_DATA = {
   name: "Vasyl Hartaver",
@@ -23,11 +23,11 @@ export const RESUME_DATA = {
       leadership.
     </>
   ),
-  avatarUrl: "https://avatars.githubusercontent.com/u/1017620?v=4",
-  personalWebsiteUrl: "https://jarocki.me",
+  avatarUrl: "https://avatars.githubusercontent.com/u/43547844?s=400&u=7d932451c3af40fca22ecf206709ae006f5a1dd1&v=4",
+  personalWebsiteUrl: "https://newerest.space",
   contact: {
-    email: "bartosz.jarocki@hey.com",
-    tel: "+48530213401",
+    email: "telkontar44@gmail.com",
+    tel: "+48452503354",
     social: [
       {
         name: "GitHub",
@@ -38,11 +38,6 @@ export const RESUME_DATA = {
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/bjarocki/",
         icon: LinkedInIcon,
-      },
-      {
-        name: "X",
-        url: "https://x.com/BartoszJarocki",
-        icon: XIcon,
       },
     ],
   },
@@ -182,17 +177,14 @@ export const RESUME_DATA = {
     },
   ],
   skills: [
-    "React/Next.js/Remix",
+    "Vue.js(composition api, options api) / Nuxt.js",
     "TypeScript",
-    "Tailwind CSS",
-    "Design Systems",
+    "CSS/Scss/Tailwind CSS",
+    "Design Systems/Architecture",
+    "Node.js",
+    "GraphQL/Apollo Gateway",
     "WebRTC",
     "WebSockets",
-    "Node.js",
-    "GraphQL",
-    "Relay",
-    "System Architecture",
-    "Remote Team Leadership",
   ],
   projects: [
     {
