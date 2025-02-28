@@ -5,6 +5,7 @@ export const RESUME_DATA = {
   initials: "VH",
   location: "Szczecin, Poland, CET",
   locationLink: "https://www.google.com/maps/place/Szczecin",
+  personalWebsiteUrl: "",
   about:
     "Detail-oriented Senior Front-end Engineer dedicated to building high-quality products. English level - C1.",
   summary: (
