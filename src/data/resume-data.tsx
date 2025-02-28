@@ -11,7 +11,7 @@ import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
 export const RESUME_DATA = {
   name: "VH",
   initials: "VH",
-  location: "Wrocław, Poland, CET",
+  location: "Szczecin, Poland, CET",
   locationLink: "https://www.google.com/maps/place/Wrocław",
   about:
     "Detail-oriented Full Stack Engineer dedicated to building high-quality products.",
