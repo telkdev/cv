@@ -9,12 +9,12 @@ import {
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
 
 export const RESUME_DATA = {
-  name: "VH",
+  name: "Vasyl Hartaver",
   initials: "VH",
   location: "Szczecin, Poland, CET",
-  locationLink: "https://www.google.com/maps/place/Wrocław",
+  locationLink: "https://www.google.com/maps/place/Szczecin",
   about:
-    "Detail-oriented Full Stack Engineer dedicated to building high-quality products.",
+    "Detail-oriented Senior Front-End Engineer dedicated to building high-quality products.",
   summary: (
     <>
       Frontend-focused Full Stack Engineer specializing in high-performance
