@@ -190,6 +190,7 @@ export const RESUME_DATA = {
     {
       company: "Freelance - Upwork",
       link: "https://upwork.com",
+      location: "Ukraine",
       badges: [
         "Vue.js",
         "React",
