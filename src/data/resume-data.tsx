@@ -234,6 +234,7 @@ export const RESUME_DATA = {
     "WCAG/ADA",
     "SEO",
     "Problem Solving",
+    "Agile/Scrum",
     "Teamwork",
     "Communication",
   ],
