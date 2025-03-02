@@ -53,8 +53,7 @@ export const RESUME_DATA = {
       end: null,
       description: (
         <>
-          Developing and maintaining a complicated web application for print
-          inspection systems.
+          Engineered a high-performance web application for print inspection systems using Vue.js, significantly enhancing system maintainability and modularity while ensuring 97% test coverage to minimize production bugs.
           <ul className="list-inside list-disc">
             <li>
               Integrated feature-sliced design into project structure,
@@ -217,8 +216,10 @@ export const RESUME_DATA = {
     "GraphQL/Apollo Gateway",
     "Docker",
     "React",
+    "Next.js",
     "CI/CD",
     "WebSockets",
+    "Vite",
     "Vitest/Jest",
     "Figma",
     "SEO",
