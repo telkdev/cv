@@ -5,15 +5,17 @@ export const RESUME_DATA = {
   initials: "VH",
   location: "Szczecin, Poland, CET",
   locationLink: "https://www.google.com/maps/place/Szczecin",
-  personalWebsiteUrl: "",
+  personalWebsiteUrl: "https://telkdev.github.io/cv/",
   about:
-    "Detail-oriented Senior Front-end Engineer dedicated to building high-quality products. English level - C1.",
+    "Detail-oriented Senior Front-end Engineer dedicated to building high-quality products. ",
   summary: (
     <>
-      Front-end Engineer with 7+ years of experience
-      specializing in high-performance Vue.js applications and scalable UI architectures (DDD in front-end, Feature-Sliced
-      design). Experienced in optimizing performance (Google PageSpeed,
-      Lighthouse, w3c) and improving accessibility (WCAG/ADA). Working with Node.js as a back-end.
+      Front-end Engineer with 7+ years of experience specializing in
+      high-performance Vue.js applications and scalable UI architectures (DDD in
+      front-end, Feature-Sliced design). Experienced in optimizing performance
+      (Google PageSpeed, Lighthouse, w3c) and improving accessibility
+      (WCAG/ADA). Working with Node.js ecosystem for back-end developing.{" "}
+      <b>Notice period - 1 week. English level - C1.</b>
     </>
   ),
   avatarUrl:
@@ -53,7 +55,10 @@ export const RESUME_DATA = {
       end: null,
       description: (
         <>
-          Engineered a high-performance web application for print inspection systems using Vue.js, significantly enhancing system maintainability and modularity while ensuring 97% test coverage to minimize production bugs.
+          Engineered a high-performance web application for print inspection
+          systems using Vue.js, significantly enhancing system maintainability
+          and modularity while ensuring 97% test coverage to minimize production
+          bugs.
           <ul className="list-inside list-disc">
             <li>
               Integrated feature-sliced design into project structure,
@@ -206,24 +211,31 @@ export const RESUME_DATA = {
     },
   ],
   skills: [
-    "Vue.js",
-    "Nuxt.js",
-    "JavaScript",
-    "TypeScript",
-    "CSS/Scss/Tailwind CSS",
+    "JavaScript, 7y",
+    "TypeScript, 6y",
+    "Vue.js, 6y",
+    "Nuxt.js, 5y",
+    "CSS/Scss/Tailwind CSS, 7y",
+    "Node.js, 5y",
+    "GraphQL/Apollo Gateway, 3y",
+    "Docker, 2y",
+    "React, 2y",
+    "Next.js, 2y",
+    "Svelte, 2y",
+    "Figma, 3y",
     "Design Systems/Architecture",
-    "Node.js",
-    "GraphQL/Apollo Gateway",
-    "Docker",
-    "React",
-    "Next.js",
+    "Vitest/Jest, 4y",
+    "Ionic, 3y",
+    "Quasar, 2y",
+    "Vite/Webpack, 5y",
     "CI/CD",
     "WebSockets",
-    "Vite",
-    "Vitest/Jest",
-    "Figma",
-    "SEO",
+    "Semantic HTML",
     "WCAG/ADA",
+    "SEO",
+    "Problem Solving",
+    "Teamwork",
+    "Communication",
   ],
   projects: [
     {

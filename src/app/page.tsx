@@ -8,30 +8,30 @@ import { Skills } from "./components/Skills";
 import { Header } from "./components/Header";
 
 export const metadata: Metadata = {
-  title: `${RESUME_DATA.name} - Resume`,
+  title: `${RESUME_DATA.name} - CV`,
   description: RESUME_DATA.about,
   openGraph: {
-    title: `${RESUME_DATA.name} - Resume`,
+    title: `${RESUME_DATA.name} - CV`,
     description: RESUME_DATA.about,
     type: "profile",
     locale: "en_US",
-    images: [
-      {
-        url: "https://avatars.githubusercontent.com/u/43547844?s=400&u=7d932451c3af40fca22ecf206709ae006f5a1dd1&v=4",
-        width: 1200,
-        height: 630,
-        alt: `${RESUME_DATA.name}'s profile picture`,
-      },
-    ],
+    // images: [
+    //   {
+    //     url: "https://avatars.githubusercontent.com/u/43547844?s=400&u=7d932451c3af40fca22ecf206709ae006f5a1dd1&v=4",
+    //     width: 1200,
+    //     height: 630,
+    //     alt: `${RESUME_DATA.name}'s profile picture`,
+    //   },
+    // ],
   },
-  twitter: {
-    card: "summary_large_image",
-    title: `${RESUME_DATA.name} - Resume`,
-    description: RESUME_DATA.about,
-    images: [
-      "https://avatars.githubusercontent.com/u/43547844?s=400&u=7d932451c3af40fca22ecf206709ae006f5a1dd1&v=4",
-    ],
-  },
+  // twitter: {
+  //   card: "summary_large_image",
+  //   title: `${RESUME_DATA.name} - CV`,
+  //   description: RESUME_DATA.about,
+  //   images: [
+  //     "https://avatars.githubusercontent.com/u/43547844?s=400&u=7d932451c3af40fca22ecf206709ae006f5a1dd1&v=4",
+  //   ],
+  // },
 };
 
 /**
@@ -53,12 +53,12 @@ export default function ResumePage() {
       id="main-content"
     >
       <div className="sr-only">
-        <h1>{RESUME_DATA.name}&apos;s Resume</h1>
+        <h1>{RESUME_DATA.name}&apos;s CV</h1>
       </div>
 
       <section
         className="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-4"
-        aria-label="Resume Content"
+        aria-label="CV Content"
       >
         <Header />
 
