@@ -277,16 +277,16 @@ export const RESUME_DATA = {
         href: "https://uafunds.org/",
       },
     },
-    {
-      title: "Paideia",
-      techStack: ["HTML", "Scss", "JavaScript"],
-      description:
-        "English learning platform with a focus on vocabulary and grammar using AI tools.",
-      link: {
-        label: "paideia",
-        href: "https://paideia.space/",
-      },
-    },
+    // {
+    //   title: "Paideia",
+    //   techStack: ["HTML", "Scss", "JavaScript"],
+    //   description:
+    //     "English learning platform with a focus on vocabulary and grammar using AI tools.",
+    //   link: {
+    //     label: "paideia",
+    //     href: "https://paideia.space/",
+    //   },
+    // },
     {
       title: "United ukrainians",
       techStack: ["TypeScript", "Nuxt.js", "Tailwind CSS", "Vue.js"],
