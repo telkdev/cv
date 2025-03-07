@@ -216,13 +216,15 @@ export const RESUME_DATA = {
     "Vue.js, 6y",
     "Nuxt.js, 5y",
     "CSS/Scss/Tailwind CSS, 7y",
-    "Node.js, 5y",
+    "Node.js, 4y",
     "GraphQL/Apollo Gateway, 3y",
     "Docker, 2y",
     "React, 2y",
     "Next.js, 2y",
     "Svelte, 2y",
-    "Figma, 3y",
+    "PostgreSQL, 4y",
+    "MongoDB, 3y",
+    "Figma(creating designs), 3y",
     "Design Systems/Architecture",
     "Vitest/Jest, 4y",
     "Ionic, 3y",
@@ -277,16 +279,16 @@ export const RESUME_DATA = {
         href: "https://uafunds.org/",
       },
     },
-    // {
-    //   title: "Paideia",
-    //   techStack: ["HTML", "Scss", "JavaScript"],
-    //   description:
-    //     "English learning platform with a focus on vocabulary and grammar using AI tools.",
-    //   link: {
-    //     label: "paideia",
-    //     href: "https://paideia.space/",
-    //   },
-    // },
+    {
+      title: "Paideia",
+      techStack: ["HTML", "Scss", "JavaScript"],
+      description:
+        "English learning platform with a focus on vocabulary and grammar using AI tools.",
+      link: {
+        label: "paideia",
+        href: "https://paideia.space/",
+      },
+    },
     {
       title: "United ukrainians",
       techStack: ["TypeScript", "Nuxt.js", "Tailwind CSS", "Vue.js"],
