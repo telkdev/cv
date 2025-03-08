@@ -51,7 +51,7 @@ export const RESUME_DATA = {
       location: "Germany",
       badges: ["Vue.js", "TypeScript", "GraphQL", "Scss", "Vitest", "Leaflet"],
       title: "Senior Front-end Engineer",
-      start: "2022",
+      start: "Oct 2022",
       end: null,
       description: (
         <>
@@ -95,8 +95,8 @@ export const RESUME_DATA = {
       location: "USA",
       badges: ["Vue.js", "Nuxt.js", "TypeScript", "Node.js", "Tailwind CSS"],
       title: "Full Stack Developer",
-      start: "2021",
-      end: "2022",
+      start: "Dec 2021",
+      end: "Oct 2022",
       description: (
         <>
           {" "}
@@ -133,8 +133,8 @@ export const RESUME_DATA = {
       location: "Ukraine",
       badges: ["Vue.js", "React", "TypeScript", "Nuxt.js", "Node.js", "PHP"],
       title: "Full Stack Developer",
-      start: "2021",
-      end: "2021",
+      start: "Apr 2021",
+      end: "Dec 2021",
       description: (
         <>
           Developed and maintained web applications for clients in various
@@ -163,8 +163,8 @@ export const RESUME_DATA = {
       location: "Ukraine",
       badges: ["Vue.js", "CSS", "Node.js", "HTML", "Figma"],
       title: "Front-end Developer",
-      start: "2019",
-      end: "2021",
+      start: "Sep 2019",
+      end: "Apr 2021",
       description: (
         <>
           As a solo front-end developer, I was responsible for building custom
@@ -204,8 +204,8 @@ export const RESUME_DATA = {
         "SCSS",
       ],
       title: "Front-end Developer",
-      start: "2018",
-      end: "2019",
+      start: "Jan 2018",
+      end: "Sep 2019",
       description:
         "Collaborated with clients to build custom web applications, focusing on performance, accessibility, and maintainability.",
     },
