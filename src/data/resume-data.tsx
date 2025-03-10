@@ -217,6 +217,7 @@ export const RESUME_DATA = {
     "Nuxt.js, 5y",
     "CSS/Scss/Tailwind CSS, 7y",
     "Node.js, 4y",
+    "Express.js, 4y", 
     "GraphQL/Apollo Gateway, 3y",
     "Docker, 2y",
     "React, 2y",
