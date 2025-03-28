@@ -21,7 +21,7 @@ export const RESUME_DATA = {
   avatarUrl:
     "https://avatars.githubusercontent.com/u/43547844?s=400&u=7d932451c3af40fca22ecf206709ae006f5a1dd1&v=4",
   contact: {
-    email: "telkontar44@gmail.com",
+    email: "vhartaver@gmail.com",
     tel: "+48452503354",
     social: [
       {
@@ -112,9 +112,8 @@ export const RESUME_DATA = {
               Injection) to improve code modularity and reusability.
             </li>
             <li>
-              Optimized Webpack configuration, reducing bundle size and
-              improving page load speeds (lazy loading, tree shaking, and code
-              splitting).
+              Improved Webpack configuration, reducing bundle size and improving
+              page load speeds (lazy loading, tree shaking, and code splitting).
             </li>
             <li>
               Implementing system-wide monitoring and security improvements
@@ -150,7 +149,7 @@ export const RESUME_DATA = {
               responsiveness across devices.
             </li>
             <li>
-              Optimized front-end performance, reducing load times and improving
+              Enhanced front-end performance, reducing load times and improving
               UX.
             </li>
           </ul>
@@ -217,7 +216,7 @@ export const RESUME_DATA = {
     "Nuxt.js, 5y",
     "CSS/Scss/Tailwind CSS, 7y",
     "Node.js, 4y",
-    "Express.js, 4y", 
+    "Express.js, 4y",
     "GraphQL/Apollo Gateway, 3y",
     "Docker, 2y",
     "React, 2y",
@@ -264,7 +263,7 @@ export const RESUME_DATA = {
       title: "Platinum Dental",
       techStack: ["TypeScript", "Nuxt.js", "Tailwind CSS"],
       description:
-        "Project was created for my friend as a gift in honor of the clinic opening. The feature of the project is telegram bot for doctor appointment scheduling.",
+        "Project was established for my friend as a gift in honor of the clinic opening. The feature of the project is telegram bot for doctor appointment scheduling.",
       link: {
         label: "platinum",
         href: "https://platinum.biz.ua/",
@@ -294,7 +293,7 @@ export const RESUME_DATA = {
       title: "United ukrainians",
       techStack: ["TypeScript", "Nuxt.js", "Tailwind CSS", "Vue.js"],
       description:
-        "Project created from scratch (design, the app itself). Created for the volunteer organisation 'United ukrainians' that was designed to fund some projects with categories.",
+        "Project was designed from scratch for the volunteer organisation 'United ukrainians' that was designed to fund some projects with categories.",
       link: {
         label: "united-ukrainians",
         href: "https://united-ukrainians.vercel.app/",
