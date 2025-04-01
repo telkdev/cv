@@ -7,7 +7,7 @@ export const RESUME_DATA = {
   locationLink: "https://www.google.com/maps/place/Szczecin",
   personalWebsiteUrl: "https://telkdev.github.io/cv/",
   about:
-    "Detail-oriented Senior Front-end Engineer dedicated to building high-quality products. ",
+    "Detail-oriented Senior Front-end Engineer dedicated to building high-quality products.",
   summary: (
     <>
       Front-end Engineer with 7+ years of experience specializing in
@@ -73,7 +73,7 @@ export const RESUME_DATA = {
               functionality.
             </li>
             <li>
-              Incresed page load by adding virtual scrolling with dynamic items
+              Incresed page load speed by adding virtual scrolling with dynamic items
               height calculation, reducing initial load time by 40%.
             </li>
             <li>
@@ -210,17 +210,15 @@ export const RESUME_DATA = {
     },
   ],
   skills: [
-    "JavaScript, 7y",
-    "TypeScript, 7y",
+    "JavaScript, 7y / TypeScript, 7y",
     "Vue.js, 7y",
     "Nuxt.js, 5y",
     "CSS/Scss/Tailwind CSS, 7y",
     "Node.js, 4y",
     "Express.js, 4y",
-    "GraphQL/Apollo Gateway, 3y",
+    "GraphQL/Apollo Gateway, 5y",
+    "React, 2y / Next.js, 2y",
     "Docker, 2y",
-    "React, 2y",
-    "Next.js, 2y",
     "Svelte, 2y",
     "PostgreSQL, 4y",
     "MongoDB, 3y",
@@ -233,8 +231,9 @@ export const RESUME_DATA = {
     "Quasar, 5y",
     "Bulma, 5y",
     "Bootstrap, 5y",
+    "Rest API 5y",
     "Vite/Webpack, 5y",
-    "CI/CD",
+    "CI/CD (GitHub Actions, GitLab CI)",
     "WebSockets",
     "Semantic HTML",
     "WCAG/ADA",
