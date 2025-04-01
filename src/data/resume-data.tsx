@@ -10,11 +10,15 @@ export const RESUME_DATA = {
     "Detail-oriented Senior Front-end Engineer dedicated to building high-quality products.",
   summary: (
     <>
-      Front-end Engineer with 7+ years of experience specializing in
-      high-performance Vue.js applications and scalable UI architectures (DDD in
-      front-end, Feature-Sliced design). Experienced in optimizing performance
-      (Google PageSpeed, Lighthouse, w3c) and improving accessibility
-      (WCAG/ADA). Working with Node.js ecosystem for back-end developing.{" "}
+      Experienced Front-end Engineer with 7+ years of expertise in
+      Vue.js(composition, options), Nuxt.js, and JavaScript/TypeScript
+      ecosystems. Specializing in high-performance web applications, scalable UI
+      architecture (DDD, Feature-Sliced Design), and SEO & accessibility
+      (WCAG/ADA compliance). Proficient in full-stack development using Node.js,
+      GraphQL, and PostgreSQL. Strong background in CI/CD pipelines,
+      unit/integration testing (Vitest/Jest), and agile methodologies.
+      Passionate about optimizing web performance, improving user experience,
+      and collaborating in cross-functional teams.{" "}
       <b>Notice period - 1 week. English level - C1.</b>
     </>
   ),
@@ -49,7 +53,15 @@ export const RESUME_DATA = {
       company: "EyeC GmbH",
       link: "https://https://www.eyec.com/",
       location: "Germany",
-      badges: ["Vue.js", "TypeScript", "GraphQL", "Scss", "Vitest", "Leaflet"],
+      badges: [
+        "Vue.js",
+        "TypeScript",
+        "GraphQL",
+        "Scss",
+        "Vitest",
+        "Leaflet",
+        "Pinia",
+      ],
       title: "Senior Front-end Engineer",
       start: "Oct 2022",
       end: null,
@@ -61,30 +73,47 @@ export const RESUME_DATA = {
           bugs.
           <ul className="list-inside list-disc">
             <li>
-              Integrated feature-sliced design into project structure,
-              increasing maintainability and modularity.
+              Integrated Feature-Sliced Design (FSD) into project structure,
+              enhancing scalability, maintainability, and modularity while
+              reducing tech debt.
             </li>
             <li>
-              Architecting migration from Vue 2 options api to Vue 3 composition
-              api for improved performance, DX, and maintainability.
+              Led migration from Vue 2 (Options API) to Vue 3 (Composition API),
+              improving performance, developer experience (DX), and code
+              maintainability.
             </li>
             <li>
-              Designed and implemented a state machine for PDF comparison
-              functionality.
+              Designed and implemented a state machine for PDF comparison,
+              ensuring efficient document processing and improved user
+              experience.
             </li>
             <li>
-              Incresed page load speed by adding virtual scrolling with dynamic items
-              height calculation, reducing initial load time by 40%.
+              Increased page load speed by 40% by implementing virtual scrolling
+              with dynamic item height calculation, optimizing UX for large
+              datasets.
             </li>
             <li>
-              Optimized API integration using GraphQL, reducing fetched data
-              size by 35% and improving response time.
+              Optimized GraphQL API integration, reducing payload size by 35%
+              and improving response time for faster data retrieval.
             </li>
             <li>
-              Achieved 97% test coverage through integration and unit tests,
-              reducing bugs in production.
+              Achieved 97% test coverage with unit and integration tests
+              (Vitest, Jest), decreasing production bugs by 50% and improving
+              code reliability.
             </li>
-            <li>Developed custom NPM packages for cross-project use.</li>
+            <li>
+              Developed custom NPM packages for cross-project code reuse,
+              enhancing efficiency and reducing redundancy.
+            </li>
+            <li>
+              Implemented performance monitoring and profiling tools
+              (Lighthouse, Web Vitals) to ensure high Google PageSpeed scores
+              (90+) and better SEO rankings.
+            </li>
+            <li>
+              Improved WCAG 2.1 accessibility compliance, making the application
+              more inclusive and user-friendly.
+            </li>
           </ul>
         </>
       ),
