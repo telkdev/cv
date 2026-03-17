@@ -74,6 +74,10 @@ interface CompanyLinkProps {
  * Renders company name with optional link
  */
 function CompanyLink({ company, link }: CompanyLinkProps) {
+  if (!link) {
+    return <span className="shrink-0">{company}</span>;
+  }
+
   return (
     <a
       className="hover:underline shrink-0"
