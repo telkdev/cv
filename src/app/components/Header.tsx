@@ -137,6 +137,26 @@ function PrintContact({ contact, personalWebsiteUrl }: PrintContactProps) {
 }
 
 /**
+ * Machine-readable contact info for ATS parsers and scrapers.
+ * Visually hidden but present in the DOM.
+ */
+function MachineReadableContact() {
+  return (
+    <div className="sr-only" aria-hidden="true">
+      <span>Email: {RESUME_DATA.contact.email}</span>
+      <span>Phone: {RESUME_DATA.contact.tel}</span>
+      <span>Location: {RESUME_DATA.location}</span>
+      <span>Website: {RESUME_DATA.personalWebsiteUrl}</span>
+      {RESUME_DATA.contact.social.map((s) => (
+        <a key={s.name} href={s.url}>
+          {s.name}: {s.url}
+        </a>
+      ))}
+    </div>
+  );
+}
+
+/**
  * Header component displaying personal information and contact details
  */
 export function Header() {
@@ -167,6 +187,8 @@ export function Header() {
           contact={RESUME_DATA.contact}
           personalWebsiteUrl={RESUME_DATA.personalWebsiteUrl}
         />
+
+        <MachineReadableContact />
       </div>
 
       <Avatar className="size-28" aria-hidden="true">

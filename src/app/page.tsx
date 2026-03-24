@@ -9,30 +9,41 @@ import { Header } from "./components/Header";
 import { Education } from "./components/Education";
 
 export const metadata: Metadata = {
-  title: `${RESUME_DATA.name} - CV`,
+  title: `${RESUME_DATA.name} | Senior Front-end Engineer - CV`,
   description: RESUME_DATA.about,
+  keywords: [
+    "Senior Front-end Engineer",
+    "Vue.js",
+    "Nuxt.js",
+    "TypeScript",
+    "React",
+    "Next.js",
+    "Agentic Development",
+    "Claude Code",
+    "MCP Servers",
+    "AI Agents",
+    "Micro-frontends",
+    "Core Web Vitals",
+    "SSR",
+    "SSG",
+    "GraphQL",
+    "Pinia",
+    "Node.js",
+    "Front-end Developer",
+    "UI Architecture",
+  ],
   openGraph: {
-    title: `${RESUME_DATA.name} - CV`,
+    title: `${RESUME_DATA.name} | Senior Front-end Engineer`,
     description: RESUME_DATA.about,
     type: "profile",
     locale: "en_US",
-    // images: [
-    //   {
-    //     url: "https://avatars.githubusercontent.com/u/43547844?s=400&u=7d932451c3af40fca22ecf206709ae006f5a1dd1&v=4",
-    //     width: 1200,
-    //     height: 630,
-    //     alt: `${RESUME_DATA.name}'s profile picture`,
-    //   },
-    // ],
+    url: RESUME_DATA.personalWebsiteUrl,
   },
-  // twitter: {
-  //   card: "summary_large_image",
-  //   title: `${RESUME_DATA.name} - CV`,
-  //   description: RESUME_DATA.about,
-  //   images: [
-  //     "https://avatars.githubusercontent.com/u/43547844?s=400&u=7d932451c3af40fca22ecf206709ae006f5a1dd1&v=4",
-  //   ],
-  // },
+  twitter: {
+    card: "summary_large_image",
+    title: `${RESUME_DATA.name} | Senior Front-end Engineer`,
+    description: RESUME_DATA.about,
+  },
 };
 
 /**
@@ -53,14 +64,18 @@ export default function ResumePage() {
       className="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-11 md:p-16"
       id="main-content"
     >
-      <div className="sr-only">
-        <h1>{RESUME_DATA.name}&apos;s CV</h1>
-      </div>
-
-      <section
+      <article
         className="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-4"
-        aria-label="CV Content"
+        itemScope
+        itemType="https://schema.org/Person"
       >
+        <meta itemProp="name" content={RESUME_DATA.name} />
+        <meta itemProp="jobTitle" content="Senior Front-end Engineer" />
+        <meta itemProp="email" content={RESUME_DATA.contact.email} />
+        <meta itemProp="telephone" content={RESUME_DATA.contact.tel} />
+        <meta itemProp="url" content={RESUME_DATA.personalWebsiteUrl} />
+        <meta itemProp="image" content={RESUME_DATA.avatarUrl} />
+
         <Header />
 
         <div className="space-y-8 print:space-y-4">
@@ -74,7 +89,7 @@ export default function ResumePage() {
 
           <Projects projects={RESUME_DATA.projects} />
         </div>
-      </section>
+      </article>
 
       <nav className="print:hidden" aria-label="Quick navigation">
         <CommandMenu links={getCommandMenuLinks()} />
