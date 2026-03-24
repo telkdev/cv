@@ -78,7 +78,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.className}>
       <head>
-        <link rel="canonical" href={RESUME_DATA.personalWebsiteUrl} />
+        <link rel="canonical" href="https://telkdev.github.io/cv/" />
         <JsonLd />
       </head>
       <body>{children}</body>

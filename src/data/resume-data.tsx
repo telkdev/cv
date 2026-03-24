@@ -5,21 +5,16 @@ export const RESUME_DATA = {
   initials: "VH",
   location: "Szczecin, Poland, CET",
   locationLink: "https://www.google.com/maps/place/Szczecin",
-  personalWebsiteUrl: "https://telkdev.github.io/cv/",
+  personalWebsiteUrl: "https://github.com/telkdev",
   about:
     "Senior Front-end Engineer with 7+ years building high-performance web applications, scalable UI architectures, and AI-powered developer workflows.",
   summary: (
     <>
-      Senior Front-end Engineer specializing in Vue.js, Nuxt.js, and TypeScript
-      ecosystems. I build high-performance web applications with scalable UI
-      architecture (Feature-Sliced Design, DDD, SSR/SSG), strong test coverage,
-      and accessibility compliance. Proven track record of improving Core Web
-      Vitals, mentoring developers, and driving architectural decisions across
-      teams. Experienced across the full stack with Node.js, GraphQL, and
-      PostgreSQL. Actively practicing agentic development — building AI-driven
-      CI/CD pipelines, custom Claude Code agents and skills, MCP server
-      integrations, and visual regression testing with Docker to ship faster and
-      with higher quality.
+      Senior Front-end Engineer specializing in Vue.js, Nuxt.js, and TypeScript.
+      I architect scalable UIs (Feature-Sliced Design, DDD, SSR/SSG), optimize
+      Core Web Vitals, mentor developers, and drive technical decisions across
+      distributed teams. Actively building AI-driven development workflows with
+      Claude Code agents, MCP servers, and automated visual regression pipelines.
     </>
   ),
   avatarUrl:
@@ -42,8 +37,8 @@ export const RESUME_DATA = {
   },
   education: [
     {
-      school: "MSU",
-      degree: "Bachelor's Degree",
+      school: "Mukachevo State University",
+      degree: "Bachelor's Degree in Computer Science",
       start: "2014",
       end: "2018",
     },
@@ -66,44 +61,38 @@ export const RESUME_DATA = {
       end: null,
       description: (
         <>
-          Building AI-powered customer engagement and personalization platform
-          serving 1,200+ enterprise clients (Samsung, IKEA, Toyota, Virgin)
-          across 25+ countries. The platform processes 2.2 billion requests
-          daily.
+          AI-powered customer engagement platform serving 1,200+ enterprise
+          clients (Samsung, IKEA, Toyota) across 25+ countries, processing 2.2
+          billion requests daily.
           <ul className="list-inside list-disc">
             <li>
-              Refactored front-end architecture to a layered structure,
-              improving modularity, separation of concerns, and long-term
-              maintainability across micro-frontend modules.
+              Improved mobile Core Web Vitals (Lighthouse) from 15 to 90,
+              cutting LCP by 6x and eliminating layout shift across the
+              platform.
             </li>
             <li>
-              Introduced unit testing paradigm and established testing
-              standards, increasing code reliability and developer confidence
-              in deployments.
+              Refactored front-end to a layered architecture across
+              micro-frontend modules, reducing cross-module coupling and
+              unblocking parallel team development.
             </li>
             <li>
-              Mentored junior and mid-level developers on front-end
-              architecture patterns, micro-frontend best practices, and
-              scalable component design.
+              Introduced unit testing standards from zero coverage, increasing
+              code reliability and reducing post-deploy hotfixes.
             </li>
             <li>
-              Improved mobile Core Web Vitals (Lighthouse) score from 15 to
-              90, dramatically enhancing page load performance, INP, and LCP
-              across the platform.
+              Mentored junior and mid-level developers on architecture
+              patterns, micro-frontend best practices, and scalable component
+              design.
             </li>
             <li>
-              Developing and maintaining cross-channel marketing UI components
-              for web, app, email, and messaging personalization features.
+              Built custom Claude Code agents, skills, and MCP server
+              integrations to automate code reviews, boilerplate generation,
+              and repetitive engineering tasks across the team.
             </li>
             <li>
-              Built and contributed custom Claude Code agents, skills, and MCP
-              server integrations to automate development workflows, code
-              reviews, and repetitive engineering tasks across the team.
-            </li>
-            <li>
-              Implemented AI-powered CI/CD checks with visual regression
-              testing in Docker pipelines, catching UI regressions
-              automatically before code reaches production.
+              Implemented AI-powered CI/CD pipeline with Playwright visual
+              regression testing in Docker, catching UI regressions
+              automatically before production.
             </li>
           </ul>
         </>
@@ -127,47 +116,43 @@ export const RESUME_DATA = {
       end: "May 2025",
       description: (
         <>
-          Engineered a web application for print inspection systems used by
-          pharmaceutical and packaging companies to detect print defects,
-          ensuring regulatory compliance and product quality.
+          Web application for print inspection systems used by pharmaceutical
+          and packaging companies to detect print defects, ensuring regulatory
+          compliance.
           <ul className="list-inside list-disc">
             <li>
-              Integrated Feature-Sliced Design (FSD) into project structure,
-              enhancing scalability and modularity while reducing tech debt.
-            </li>
-            <li>
               Led migration from Vue 2 (Options API) to Vue 3 (Composition
-              API) with Pinia state management, improving performance and
-              developer experience.
-            </li>
-            <li>
-              Mentored junior developers on architectural patterns, code
-              review best practices, and Vue 3 Composition API adoption.
-            </li>
-            <li>
-              Designed and implemented a state machine for PDF comparison,
-              ensuring efficient document processing and improved user
+              API) with Pinia, improving runtime performance and developer
               experience.
             </li>
             <li>
-              Increased page load speed by 40% by implementing virtual
-              scrolling with dynamic item height calculation for large
-              datasets.
+              Integrated Feature-Sliced Design (FSD) into project structure,
+              reducing tech debt and making the codebase navigable for new
+              hires.
             </li>
             <li>
-              Optimized GraphQL API integration, reducing payload size by 35%
-              and improving response time.
+              Increased page load speed by 40% via virtual scrolling with
+              dynamic item height calculation for datasets of 10,000+ rows.
             </li>
             <li>
-              Achieved 97% test coverage with unit and integration tests
-              (Vitest, Jest), significantly reducing production bugs.
+              Optimized GraphQL queries, reducing payload size by 35% and
+              cutting average response time.
             </li>
             <li>
-              Developed custom NPM packages for cross-project code reuse.
+              Achieved 97% test coverage (Vitest, Jest), reducing production
+              bug rate significantly.
             </li>
             <li>
-              Improved WCAG 2.1 accessibility compliance and maintained
-              Lighthouse scores above 90.
+              Designed a state machine for PDF comparison workflow, replacing
+              brittle imperative logic with predictable state transitions.
+            </li>
+            <li>
+              Mentored junior developers on Vue 3, Composition API, and code
+              review practices.
+            </li>
+            <li>
+              Maintained Lighthouse scores above 90 and improved WCAG 2.1
+              compliance.
             </li>
           </ul>
         </>
@@ -190,35 +175,28 @@ export const RESUME_DATA = {
       end: "Oct 2022",
       description: (
         <>
-          Built and shipped multiple client-facing web applications with SSR
-          and SSG rendering strategies using Nuxt.js for optimal performance
-          and SEO.
+          Built and shipped multiple client-facing web applications with SSR/SSG
+          using Nuxt.js.
           <ul className="list-inside list-disc">
             <li>
               Architected the front-end from scratch using Clean Architecture
-              (DDD), Vue 3, and Pinia, ensuring scalability and
-              maintainability.
+              (DDD), Vue 3, and Pinia for a greenfield product.
             </li>
             <li>
-              Implemented SSR and SSG rendering strategies with Nuxt.js,
-              achieving fast initial page loads and strong SEO performance.
+              Implemented SSR and SSG rendering with Nuxt.js, achieving
+              sub-second initial page loads and strong SEO rankings.
             </li>
             <li>
-              Implemented advanced design patterns (Adapter, Command,
-              Dependency Injection) to improve code modularity and
-              reusability.
+              Applied advanced design patterns (Adapter, Command, Dependency
+              Injection) to decouple business logic from UI layer.
             </li>
             <li>
-              Improved Webpack configuration, reducing bundle size and
-              improving page load speeds (lazy loading, tree shaking, code
-              splitting).
+              Reduced Webpack bundle size through lazy loading, tree shaking,
+              and code splitting.
             </li>
             <li>
-              Implemented system-wide monitoring and security improvements.
-            </li>
-            <li>
-              Collaborated closely with UX designers and back-end engineers,
-              ensuring seamless integration between front-end and API layers.
+              Integrated Sentry error tracking and set up performance
+              monitoring dashboards for production observability.
             </li>
           </ul>
         </>
@@ -241,26 +219,20 @@ export const RESUME_DATA = {
       end: "Dec 2021",
       description: (
         <>
-          Developed and maintained web applications for clients in various
-          industries, created custom CRM system with SSR using Nuxt.js.
+          Developed web applications for clients across multiple industries and
+          built a custom CRM system.
           <ul className="list-inside list-disc">
             <li>
-              Refactored a legacy monolithic application into a modular
-              microservices architecture using Vue 2, improving scalability
-              and maintainability.
+              Refactored a legacy monolithic PHP application into modular Vue 2
+              micro-services, enabling independent deployments per feature.
             </li>
             <li>
-              Developed and enhanced UI components, ensuring consistency and
-              responsiveness across devices.
+              Implemented SSR with Nuxt.js for client-facing applications,
+              improving SEO indexing and reducing time-to-interactive.
             </li>
             <li>
-              Implemented server-side rendering (SSR) with Nuxt.js, improving
-              SEO and initial load performance for client-facing
-              applications.
-            </li>
-            <li>
-              Enhanced front-end performance, reducing load times and
-              improving UX.
+              Built a responsive component library ensuring cross-device
+              consistency across the CRM platform.
             </li>
           </ul>
         </>
@@ -270,32 +242,26 @@ export const RESUME_DATA = {
       company: "ThinkMobiles",
       link: "https://thinkmobiles.com/",
       location: "Ukraine",
-      badges: ["Vue.js", "CSS", "Node.js", "HTML", "Figma"],
+      badges: ["Vue.js", "CSS", "Node.js", "JavaScript", "Figma"],
       title: "Front-end Developer",
       start: "Sep 2019",
       end: "Apr 2021",
       description: (
         <>
-          As a solo front-end developer, built custom web applications from
-          scratch with emphasis on performance, accessibility and
-          maintainability.
+          Solo front-end developer responsible for building web applications
+          end-to-end from Figma designs to production.
           <ul className="list-inside list-disc">
             <li>
-              Built the front-end architecture from scratch using Vue.js and
-              vanilla JavaScript, ensuring a scalable and maintainable
-              codebase.
+              Established front-end architecture using Vue.js, delivering 3
+              client projects from zero to production.
             </li>
             <li>
-              Collaborated with UX designers, back-end engineers, and product
-              teams to refine UI/UX.
+              Implemented WCAG accessibility standards using WAVE evaluation
+              tools, achieving compliance for all delivered projects.
             </li>
             <li>
-              Implemented accessibility best practices (WCAG), improving
-              usability for diverse users using WAVE evaluation tools.
-            </li>
-            <li>
-              Translated complex UI/UX elements and animations into
-              high-quality, reusable HTML and CSS components.
+              Translated complex animations and UI interactions from Figma
+              into performant, reusable CSS/JS components.
             </li>
           </ul>
         </>
@@ -316,8 +282,21 @@ export const RESUME_DATA = {
       title: "Front-end Developer",
       start: "Jan 2018",
       end: "Sep 2019",
-      description:
-        "Collaborated with clients to build custom web applications, focusing on performance, accessibility, and maintainability.",
+      description: (
+        <>
+          Built custom web applications for international clients on Upwork.
+          <ul className="list-inside list-disc">
+            <li>
+              Delivered 10+ projects across e-commerce, SaaS, and marketing
+              verticals using Vue.js and React.
+            </li>
+            <li>
+              Maintained a top-rated freelancer profile with 100% job success
+              score.
+            </li>
+          </ul>
+        </>
+      ),
     },
   ],
   skills: [
@@ -356,7 +335,7 @@ export const RESUME_DATA = {
       description:
         "Blog platform about history and technology. Built with Nuxt, Nest, and Strapi for efficient content management.",
       link: {
-        label: "newerest.space/",
+        label: "newerest.space",
         href: "https://newerest.space/",
       },
     },
@@ -366,7 +345,7 @@ export const RESUME_DATA = {
       description:
         "Dental clinic website with Telegram bot integration for automated doctor appointment scheduling.",
       link: {
-        label: "platinum",
+        label: "platinum.biz.ua",
         href: "https://platinum.biz.ua/",
       },
     },
@@ -376,22 +355,22 @@ export const RESUME_DATA = {
       description:
         "Project aggregator for small volunteer organisations to create and share fundraisers.",
       link: {
-        label: "uafunds",
+        label: "uafunds.org",
         href: "https://uafunds.org/",
       },
     },
     {
       title: "Paideia",
-      techStack: ["HTML", "Scss", "JavaScript"],
+      techStack: ["TypeScript", "Nuxt.js", "OpenAI API", "Tailwind CSS"],
       description:
-        "English learning platform with a focus on vocabulary and grammar using AI tools.",
+        "AI-powered English learning platform with vocabulary training and grammar exercises generated by LLMs.",
       link: {
-        label: "paideia",
+        label: "paideia.space",
         href: "https://paideia.space/",
       },
     },
     {
-      title: "United ukrainians",
+      title: "United Ukrainians",
       techStack: ["TypeScript", "Nuxt.js", "Tailwind CSS", "Vue.js"],
       description:
         "Fundraising platform for the volunteer organisation 'United Ukrainians' with categorized project funding.",
