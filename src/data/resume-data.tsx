@@ -10,14 +10,16 @@ export const RESUME_DATA = {
     "Senior Front-end Engineer with 7+ years building high-performance web applications, scalable UI architectures, and AI-powered developer workflows.",
   summary: (
     <>
-      Senior Front-end Engineer specializing in Vue.js, Nuxt.js, and
-      TypeScript ecosystems. I build high-performance web applications with
-      scalable UI architecture (Feature-Sliced Design, DDD), strong test
-      coverage, and accessibility compliance. Experienced across the full stack
-      with Node.js, GraphQL, and PostgreSQL. Actively practicing agentic
-      development — building AI-driven workflows with Claude Code, MCP servers,
-      custom agents, and prompt engineering to ship faster and with higher
-      quality.
+      Senior Front-end Engineer specializing in Vue.js, Nuxt.js, and TypeScript
+      ecosystems. I build high-performance web applications with scalable UI
+      architecture (Feature-Sliced Design, DDD, SSR/SSG), strong test coverage,
+      and accessibility compliance. Proven track record of improving Core Web
+      Vitals, mentoring developers, and driving architectural decisions across
+      teams. Experienced across the full stack with Node.js, GraphQL, and
+      PostgreSQL. Actively practicing agentic development — building AI-driven
+      CI/CD pipelines, custom Claude Code agents and skills, MCP server
+      integrations, and visual regression testing with Docker to ship faster and
+      with higher quality.
     </>
   ),
   avatarUrl:
@@ -56,7 +58,7 @@ export const RESUME_DATA = {
         "TypeScript",
         "React",
         "Micro-frontends",
-        "Node.js",
+        "Pinia",
         "Claude Code",
       ],
       title: "Senior Front-end Engineer",
@@ -80,17 +82,28 @@ export const RESUME_DATA = {
               in deployments.
             </li>
             <li>
-              Developing and maintaining cross-channel marketing UI components
-              for web, app, email, and messaging personalization features.
+              Mentored junior and mid-level developers on front-end
+              architecture patterns, micro-frontend best practices, and
+              scalable component design.
             </li>
             <li>
-              Working on the Customer Data Platform (CDP) frontend, enabling
-              marketers to build individualized customer journeys at scale.
+              Improved mobile Core Web Vitals (Lighthouse) score from 15 to
+              90, dramatically enhancing page load performance, INP, and LCP
+              across the platform.
+            </li>
+            <li>
+              Developing and maintaining cross-channel marketing UI components
+              for web, app, email, and messaging personalization features.
             </li>
             <li>
               Built and contributed custom Claude Code agents, skills, and MCP
               server integrations to automate development workflows, code
               reviews, and repetitive engineering tasks across the team.
+            </li>
+            <li>
+              Implemented AI-powered CI/CD checks with visual regression
+              testing in Docker pipelines, catching UI regressions
+              automatically before code reaches production.
             </li>
           </ul>
         </>
@@ -104,10 +117,10 @@ export const RESUME_DATA = {
         "Vue.js",
         "TypeScript",
         "GraphQL",
-        "Scss",
+        "Pinia",
         "Vitest",
         "Leaflet",
-        "Pinia",
+        "Scss",
       ],
       title: "Senior Front-end Engineer",
       start: "Oct 2022",
@@ -123,8 +136,13 @@ export const RESUME_DATA = {
               enhancing scalability and modularity while reducing tech debt.
             </li>
             <li>
-              Led migration from Vue 2 (Options API) to Vue 3 (Composition API),
-              improving performance and developer experience.
+              Led migration from Vue 2 (Options API) to Vue 3 (Composition
+              API) with Pinia state management, improving performance and
+              developer experience.
+            </li>
+            <li>
+              Mentored junior developers on architectural patterns, code
+              review best practices, and Vue 3 Composition API adoption.
             </li>
             <li>
               Designed and implemented a state machine for PDF comparison,
@@ -132,8 +150,9 @@ export const RESUME_DATA = {
               experience.
             </li>
             <li>
-              Increased page load speed by 40% by implementing virtual scrolling
-              with dynamic item height calculation for large datasets.
+              Increased page load speed by 40% by implementing virtual
+              scrolling with dynamic item height calculation for large
+              datasets.
             </li>
             <li>
               Optimized GraphQL API integration, reducing payload size by 35%
@@ -158,26 +177,41 @@ export const RESUME_DATA = {
       company: "MOST Programming",
       link: "https://most-us.com/",
       location: "USA",
-      badges: ["Vue.js", "Nuxt.js", "TypeScript", "Node.js", "Tailwind CSS"],
+      badges: [
+        "Vue.js",
+        "Nuxt.js",
+        "TypeScript",
+        "Node.js",
+        "Pinia",
+        "Tailwind CSS",
+      ],
       title: "Full Stack Developer",
       start: "Dec 2021",
       end: "Oct 2022",
       description: (
         <>
-          Transitioned to full-stack development, building and shipping
-          multiple client-facing web applications.
+          Built and shipped multiple client-facing web applications with SSR
+          and SSG rendering strategies using Nuxt.js for optimal performance
+          and SEO.
           <ul className="list-inside list-disc">
             <li>
               Architected the front-end from scratch using Clean Architecture
-              (DDD) and Vue 3, ensuring scalability and maintainability.
+              (DDD), Vue 3, and Pinia, ensuring scalability and
+              maintainability.
             </li>
             <li>
-              Implemented advanced design patterns (Adapter, Command, Dependency
-              Injection) to improve code modularity and reusability.
+              Implemented SSR and SSG rendering strategies with Nuxt.js,
+              achieving fast initial page loads and strong SEO performance.
             </li>
             <li>
-              Improved Webpack configuration, reducing bundle size and improving
-              page load speeds (lazy loading, tree shaking, code splitting).
+              Implemented advanced design patterns (Adapter, Command,
+              Dependency Injection) to improve code modularity and
+              reusability.
+            </li>
+            <li>
+              Improved Webpack configuration, reducing bundle size and
+              improving page load speeds (lazy loading, tree shaking, code
+              splitting).
             </li>
             <li>
               Implemented system-wide monitoring and security improvements.
@@ -194,27 +228,39 @@ export const RESUME_DATA = {
       company: "WorkConsult",
       link: "",
       location: "Ukraine",
-      badges: ["Vue.js", "React", "TypeScript", "Nuxt.js", "Node.js", "PHP"],
+      badges: [
+        "Vue.js",
+        "React",
+        "TypeScript",
+        "Nuxt.js",
+        "Node.js",
+        "PHP",
+      ],
       title: "Full Stack Developer",
       start: "Apr 2021",
       end: "Dec 2021",
       description: (
         <>
           Developed and maintained web applications for clients in various
-          industries, created custom CRM system.
+          industries, created custom CRM system with SSR using Nuxt.js.
           <ul className="list-inside list-disc">
             <li>
               Refactored a legacy monolithic application into a modular
-              microservices architecture using Vue 2, improving scalability and
-              maintainability.
+              microservices architecture using Vue 2, improving scalability
+              and maintainability.
             </li>
             <li>
               Developed and enhanced UI components, ensuring consistency and
               responsiveness across devices.
             </li>
             <li>
-              Enhanced front-end performance, reducing load times and improving
-              UX.
+              Implemented server-side rendering (SSR) with Nuxt.js, improving
+              SEO and initial load performance for client-facing
+              applications.
+            </li>
+            <li>
+              Enhanced front-end performance, reducing load times and
+              improving UX.
             </li>
           </ul>
         </>
@@ -236,7 +282,8 @@ export const RESUME_DATA = {
           <ul className="list-inside list-disc">
             <li>
               Built the front-end architecture from scratch using Vue.js and
-              vanilla JavaScript, ensuring a scalable and maintainable codebase.
+              vanilla JavaScript, ensuring a scalable and maintainable
+              codebase.
             </li>
             <li>
               Collaborated with UX designers, back-end engineers, and product
@@ -275,22 +322,24 @@ export const RESUME_DATA = {
   ],
   skills: [
     "JavaScript / TypeScript",
-    "Vue.js / Nuxt.js",
+    "Vue.js / Nuxt.js (SSR, SSG)",
     "React / Next.js",
+    "Pinia / Vuex",
     "CSS / Scss / Tailwind CSS",
     "Node.js / Express.js",
     "GraphQL / Apollo",
     "PostgreSQL / MongoDB",
     "Docker",
-    "Vitest / Jest",
+    "Vitest / Jest / Playwright",
     "Vite / Webpack",
     "CI/CD (GitHub Actions, GitLab CI)",
+    "Core Web Vitals / Performance",
     "Feature-Sliced Design / DDD",
     "WCAG / Accessibility",
     "Agentic Development (Claude Code, MCP Servers)",
-    "AI Agents / Multi-Agent Workflows",
+    "AI Agents / Skills / Multi-Agent Workflows",
+    "AI-Powered CI/CD & Visual Regression Testing",
     "Prompt Engineering / LLM Integration",
-    "AI-Assisted Code Generation",
   ],
   projects: [
     {
