@@ -10,11 +10,12 @@ export const RESUME_DATA = {
     "Senior Front-end Engineer with 7+ years building high-performance web applications, scalable UI architectures, and AI-powered developer workflows.",
   summary: (
     <>
-      Senior Front-end Engineer specializing in Vue.js, Nuxt.js, and TypeScript.
-      I architect scalable UIs (Feature-Sliced Design, DDD, SSR/SSG), optimize
-      Core Web Vitals, mentor developers, and drive technical decisions across
-      distributed teams. Actively building AI-driven development workflows with
-      Claude Code agents, MCP servers, and automated visual regression pipelines.
+      I architect scalable front-end systems (Feature-Sliced Design, DDD,
+      SSR/SSG), optimize Core Web Vitals, and mentor developers across
+      distributed teams. Currently building AI-driven development workflows —
+      custom Claude Code agents, MCP servers, and automated visual regression
+      pipelines — to multiply team output and catch regressions before
+      production.
     </>
   ),
   avatarUrl:
@@ -108,8 +109,7 @@ export const RESUME_DATA = {
         "GraphQL",
         "Pinia",
         "Vitest",
-        "Leaflet",
-        "Scss",
+        "SCSS",
       ],
       title: "Senior Front-end Engineer",
       start: "Oct 2022",
@@ -122,8 +122,8 @@ export const RESUME_DATA = {
           <ul className="list-inside list-disc">
             <li>
               Led migration from Vue 2 (Options API) to Vue 3 (Composition
-              API) with Pinia, improving runtime performance and developer
-              experience.
+              API) with Pinia state management, improving runtime performance
+              and developer experience.
             </li>
             <li>
               Integrated Feature-Sliced Design (FSD) into project structure,
@@ -135,16 +135,14 @@ export const RESUME_DATA = {
               dynamic item height calculation for datasets of 10,000+ rows.
             </li>
             <li>
-              Optimized GraphQL queries, reducing payload size by 35% and
-              cutting average response time.
+              Optimized GraphQL queries and built reusable NPM packages,
+              reducing payload size by 35% and enabling cross-project code
+              sharing.
             </li>
             <li>
-              Achieved 97% test coverage (Vitest, Jest), reducing production
-              bug rate significantly.
-            </li>
-            <li>
-              Designed a state machine for PDF comparison workflow, replacing
-              brittle imperative logic with predictable state transitions.
+              Achieved 97% test coverage (Vitest, Jest) and designed a state
+              machine for PDF comparison, replacing brittle imperative logic
+              with predictable transitions.
             </li>
             <li>
               Mentored junior developers on Vue 3, Composition API, and code
@@ -304,7 +302,7 @@ export const RESUME_DATA = {
     "Vue.js / Nuxt.js (SSR, SSG)",
     "React / Next.js",
     "Pinia / Vuex",
-    "CSS / Scss / Tailwind CSS",
+    "CSS / SCSS / Tailwind CSS",
     "Node.js / Express.js",
     "GraphQL / Apollo",
     "PostgreSQL / MongoDB",
