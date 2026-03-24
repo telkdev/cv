@@ -7,16 +7,17 @@ export const RESUME_DATA = {
   locationLink: "https://www.google.com/maps/place/Szczecin",
   personalWebsiteUrl: "https://telkdev.github.io/cv/",
   about:
-    "Senior Front-end Engineer with 7+ years building high-performance web applications and scalable UI architectures.",
+    "Senior Front-end Engineer with 7+ years building high-performance web applications, scalable UI architectures, and AI-powered developer workflows.",
   summary: (
     <>
       Senior Front-end Engineer specializing in Vue.js, Nuxt.js, and
       TypeScript ecosystems. I build high-performance web applications with
       scalable UI architecture (Feature-Sliced Design, DDD), strong test
       coverage, and accessibility compliance. Experienced across the full stack
-      with Node.js, GraphQL, and PostgreSQL. Currently exploring AI-assisted
-      development workflows with Claude, prompt engineering, and automation
-      tooling.
+      with Node.js, GraphQL, and PostgreSQL. Actively practicing agentic
+      development — building AI-driven workflows with Claude Code, MCP servers,
+      custom agents, and prompt engineering to ship faster and with higher
+      quality.
     </>
   ),
   avatarUrl:
@@ -56,6 +57,7 @@ export const RESUME_DATA = {
         "React",
         "Micro-frontends",
         "Node.js",
+        "AI Agents",
       ],
       title: "Senior Front-end Engineer",
       start: "May 2025",
@@ -78,6 +80,11 @@ export const RESUME_DATA = {
             <li>
               Collaborating with distributed teams across 27+ offices to deliver
               features for the AI-native growth management platform.
+            </li>
+            <li>
+              Leveraging agentic development workflows with Claude Code, MCP
+              servers, and custom agents to accelerate feature delivery and
+              maintain code quality.
             </li>
           </ul>
         </>
@@ -274,7 +281,10 @@ export const RESUME_DATA = {
     "CI/CD (GitHub Actions, GitLab CI)",
     "Feature-Sliced Design / DDD",
     "WCAG / Accessibility",
-    "AI Tooling (Claude, Prompt Engineering, Agents)",
+    "Agentic Development (Claude Code, MCP Servers)",
+    "AI Agents / Multi-Agent Workflows",
+    "Prompt Engineering / LLM Integration",
+    "AI-Assisted Code Generation",
   ],
   projects: [
     {
