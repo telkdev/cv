@@ -49,7 +49,7 @@ export const RESUME_DATA = {
   work: [
     {
       company: "Insider",
-      link: "",
+      link: "https://useinsider.com/",
       location: "Turkey",
       badges: [
         "Vue.js",
@@ -57,7 +57,7 @@ export const RESUME_DATA = {
         "React",
         "Micro-frontends",
         "Node.js",
-        "AI Agents",
+        "Claude Code",
       ],
       title: "Senior Front-end Engineer",
       start: "May 2025",
@@ -70,6 +70,16 @@ export const RESUME_DATA = {
           daily.
           <ul className="list-inside list-disc">
             <li>
+              Refactored front-end architecture to a layered structure,
+              improving modularity, separation of concerns, and long-term
+              maintainability across micro-frontend modules.
+            </li>
+            <li>
+              Introduced unit testing paradigm and established testing
+              standards, increasing code reliability and developer confidence
+              in deployments.
+            </li>
+            <li>
               Developing and maintaining cross-channel marketing UI components
               for web, app, email, and messaging personalization features.
             </li>
@@ -78,13 +88,9 @@ export const RESUME_DATA = {
               marketers to build individualized customer journeys at scale.
             </li>
             <li>
-              Collaborating with distributed teams across 27+ offices to deliver
-              features for the AI-native growth management platform.
-            </li>
-            <li>
-              Leveraging agentic development workflows with Claude Code, MCP
-              servers, and custom agents to accelerate feature delivery and
-              maintain code quality.
+              Built and contributed custom Claude Code agents, skills, and MCP
+              server integrations to automate development workflows, code
+              reviews, and repetitive engineering tasks across the team.
             </li>
           </ul>
         </>
