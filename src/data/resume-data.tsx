@@ -21,7 +21,7 @@ export const RESUME_DATA = {
   avatarUrl:
     "https://avatars.githubusercontent.com/u/43547844?s=400&u=7d932451c3af40fca22ecf206709ae006f5a1dd1&v=4",
   contact: {
-    email: "vhartaver@gmail.com",
+    email: "telkontar44@gmail.com",
     tel: "+48452503354",
     social: [
       {
