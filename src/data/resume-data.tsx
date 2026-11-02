@@ -5,17 +5,21 @@ export const RESUME_DATA = {
   initials: "VH",
   location: "Szczecin, Poland, CET",
   locationLink: "https://www.google.com/maps/place/Szczecin",
-  personalWebsiteUrl: "https://github.com/telkdev",
+  personalWebsiteUrl: "https://telkdev.github.io/cv/",
   about:
-    "Senior Front-end Engineer with 7+ years building high-performance web applications, scalable UI architectures, and AI-powered developer workflows.",
+    "Senior Front-end Engineer (Vue 3, Nuxt, TypeScript) with 8+ years of commercial experience. Open to remote roles across the EU and relocation (EU Blue Card).",
   summary: (
     <>
-      I architect scalable front-end systems (Feature-Sliced Design, DDD,
-      SSR/SSG), optimize Core Web Vitals, and mentor developers across
-      distributed teams. Currently building AI-driven development workflows —
-      custom Claude Code agents, MCP servers, and automated visual regression
-      pipelines — to multiply team output and catch regressions before
-      production.
+      Senior front-end engineer with 8+ years of commercial experience, almost
+      all in the Vue ecosystem. I make large, slow or legacy front-ends fast
+      and maintainable without stopping feature work: led a production Vue 2
+      → Vue 3 migration (Options API/Vuex → Composition API/Pinia), took a
+      production app&apos;s mobile Lighthouse score from 15 to 90, and
+      introduced testing to codebases that had none. Recently I build Claude
+      Code agents (QA, code review) and the harness around them, and run an
+      open lab that measures front-end problems of LLM chat UIs. Polish
+      residence permit (Karta pobytu); used to remote, international teams
+      (Turkey, Germany, USA).
     </>
   ),
   avatarUrl:
@@ -48,13 +52,13 @@ export const RESUME_DATA = {
     {
       company: "Insider",
       link: "https://useinsider.com/",
-      location: "Turkey",
+      location: "Remote · Turkey",
       badges: [
         "Vue.js",
         "TypeScript",
-        "React",
         "Micro-frontends",
         "Pinia",
+        "Playwright",
         "Claude Code",
       ],
       title: "Senior Front-end Engineer",
@@ -62,38 +66,33 @@ export const RESUME_DATA = {
       end: null,
       description: (
         <>
-          AI-powered customer engagement platform serving 1,200+ enterprise
-          clients (Samsung, IKEA, Toyota) across 25+ countries, processing 2.2
-          billion requests daily.
+          B2B customer engagement platform (SaaS).
           <ul className="list-inside list-disc">
             <li>
-              Improved mobile Core Web Vitals (Lighthouse) from 15 to 90,
-              cutting LCP by 6x and eliminating layout shift across the
-              platform.
+              Improved the mobile Lighthouse score from 15 to 90 and cut LCP
+              about 6x.
             </li>
             <li>
-              Refactored front-end to a layered architecture across
-              micro-frontend modules, reducing cross-module coupling and
-              unblocking parallel team development.
+              Restructured the front-end into a layered micro-frontend
+              architecture so teams could develop and release modules
+              independently.
             </li>
             <li>
-              Introduced unit testing standards from zero coverage, increasing
-              code reliability and reducing post-deploy hotfixes.
+              Introduced unit testing to a codebase that had no tests; added
+              Playwright visual regression tests to CI (Docker).
             </li>
             <li>
-              Mentored junior and mid-level developers on architecture
-              patterns, micro-frontend best practices, and scalable component
-              design.
+              Built a Claude Code QA agent that writes and runs Playwright tests
+              for changed features and triages failing runs, plus agents for
+              first-pass code review and boilerplate.
             </li>
             <li>
-              Built custom Claude Code agents, skills, and MCP server
-              integrations to automate code reviews, boilerplate generation,
-              and repetitive engineering tasks across the team.
+              Set up the team&apos;s agent harness: CLAUDE.md conventions,
+              subagents, hooks and MCP integrations with internal tools, so
+              agents follow team standards.
             </li>
             <li>
-              Implemented AI-powered CI/CD pipeline with Playwright visual
-              regression testing in Docker, catching UI regressions
-              automatically before production.
+              Code review and mentoring for junior and mid-level developers.
             </li>
           </ul>
         </>
@@ -102,55 +101,34 @@ export const RESUME_DATA = {
     {
       company: "EyeC GmbH",
       link: "https://www.eyec.com/",
-      location: "Germany",
-      badges: [
-        "Vue.js",
-        "TypeScript",
-        "GraphQL",
-        "Pinia",
-        "Vitest",
-        "SCSS",
-      ],
+      location: "Remote · Germany",
+      badges: ["Vue 2", "Vue 3", "TypeScript", "GraphQL", "Pinia", "Vitest"],
       title: "Senior Front-end Engineer",
       start: "Oct 2022",
       end: "May 2025",
       description: (
         <>
-          Web application for print inspection systems used by pharmaceutical
-          and packaging companies to detect print defects, ensuring regulatory
-          compliance.
+          Web application for print inspection systems in pharma and packaging.
           <ul className="list-inside list-disc">
             <li>
-              Led migration from Vue 2 (Options API) to Vue 3 (Composition
-              API) with Pinia state management, improving runtime performance
-              and developer experience.
+              Led the migration of the production app from Vue 2 (Options API,
+              Vuex) to Vue 3 (Composition API, Pinia).
             </li>
             <li>
-              Integrated Feature-Sliced Design (FSD) into project structure,
-              reducing tech debt and making the codebase navigable for new
-              hires.
+              Brought test coverage to 97% with Jest and Vitest; rewrote the PDF
+              comparison logic as a state machine.
             </li>
             <li>
-              Increased page load speed by 40% via virtual scrolling with
-              dynamic item height calculation for datasets of 10,000+ rows.
+              Made pages with 10,000+ row tables load 40% faster with virtual
+              scrolling and dynamic row heights.
             </li>
             <li>
-              Optimized GraphQL queries and built reusable NPM packages,
-              reducing payload size by 35% and enabling cross-project code
-              sharing.
+              Cut GraphQL payloads by 35% and moved shared code into internal
+              NPM packages.
             </li>
             <li>
-              Achieved 97% test coverage (Vitest, Jest) and designed a state
-              machine for PDF comparison, replacing brittle imperative logic
-              with predictable transitions.
-            </li>
-            <li>
-              Mentored junior developers on Vue 3, Composition API, and code
-              review practices.
-            </li>
-            <li>
-              Maintained Lighthouse scores above 90 and improved WCAG 2.1
-              compliance.
+              Moved the codebase to Feature-Sliced Design, fixed WCAG 2.1
+              accessibility issues, mentored junior developers.
             </li>
           </ul>
         </>
@@ -159,42 +137,26 @@ export const RESUME_DATA = {
     {
       company: "MOST Programming",
       link: "https://most-us.com/",
-      location: "USA",
-      badges: [
-        "Vue.js",
-        "Nuxt.js",
-        "TypeScript",
-        "Node.js",
-        "Pinia",
-        "Tailwind CSS",
-      ],
+      location: "Remote · USA",
+      badges: ["Vue 3", "Nuxt", "TypeScript", "Node.js", "Pinia", "Tailwind CSS"],
       title: "Full Stack Developer",
       start: "Dec 2021",
       end: "Oct 2022",
       description: (
         <>
-          Built and shipped multiple client-facing web applications with SSR/SSG
-          using Nuxt.js.
+          Web applications for US clients.
           <ul className="list-inside list-disc">
             <li>
-              Architected the front-end from scratch using Clean Architecture
-              (DDD), Vue 3, and Pinia for a greenfield product.
+              Built the front-end of a new product from scratch with Vue 3,
+              Pinia and a DDD-style structure, keeping business logic out of UI
+              components.
             </li>
             <li>
-              Implemented SSR and SSG rendering with Nuxt.js, achieving
-              sub-second initial page loads and strong SEO rankings.
+              Implemented SSR and SSG with Nuxt for SEO and fast first load.
             </li>
             <li>
-              Applied advanced design patterns (Adapter, Command, Dependency
-              Injection) to decouple business logic from UI layer.
-            </li>
-            <li>
-              Reduced Webpack bundle size through lazy loading, tree shaking,
-              and code splitting.
-            </li>
-            <li>
-              Integrated Sentry error tracking and set up performance
-              monitoring dashboards for production observability.
+              Reduced bundle size with lazy loading and code splitting; set up
+              Sentry.
             </li>
           </ul>
         </>
@@ -204,33 +166,21 @@ export const RESUME_DATA = {
       company: "WorkConsult",
       link: "",
       location: "Ukraine",
-      badges: [
-        "Vue.js",
-        "React",
-        "TypeScript",
-        "Nuxt.js",
-        "Node.js",
-        "PHP",
-      ],
+      badges: ["Vue 2", "Nuxt 2", "TypeScript", "Node.js", "PHP"],
       title: "Full Stack Developer",
       start: "Apr 2021",
       end: "Dec 2021",
       description: (
         <>
-          Developed web applications for clients across multiple industries and
-          built a custom CRM system.
+          In-house CRM and client-facing apps.
           <ul className="list-inside list-disc">
             <li>
-              Refactored a legacy monolithic PHP application into modular Vue 2
-              micro-services, enabling independent deployments per feature.
+              Moved parts of a legacy PHP monolith into separate, independently
+              deployable Vue 2 apps.
             </li>
             <li>
-              Implemented SSR with Nuxt.js for client-facing applications,
-              improving SEO indexing and reducing time-to-interactive.
-            </li>
-            <li>
-              Built a responsive component library ensuring cross-device
-              consistency across the CRM platform.
+              Built client-facing apps with Nuxt 2 (SSR) and a component
+              library for the CRM.
             </li>
           </ul>
         </>
@@ -240,141 +190,85 @@ export const RESUME_DATA = {
       company: "ThinkMobiles",
       link: "https://thinkmobiles.com/",
       location: "Ukraine",
-      badges: ["Vue.js", "CSS", "Node.js", "JavaScript", "Figma"],
+      badges: ["Vue.js", "JavaScript", "CSS", "Figma"],
       title: "Front-end Developer",
       start: "Sep 2019",
       end: "Apr 2021",
       description: (
         <>
-          Solo front-end developer responsible for building web applications
-          end-to-end from Figma designs to production.
-          <ul className="list-inside list-disc">
-            <li>
-              Established front-end architecture using Vue.js, delivering 3
-              client projects from zero to production.
-            </li>
-            <li>
-              Implemented WCAG accessibility standards using WAVE evaluation
-              tools, achieving compliance for all delivered projects.
-            </li>
-            <li>
-              Translated complex animations and UI interactions from Figma
-              into performant, reusable CSS/JS components.
-            </li>
-          </ul>
+          The only front-end developer on the team; shipped 3 client projects in
+          Vue.js from Figma designs to production.
         </>
       ),
     },
     {
       company: "Freelance - Upwork",
       link: "https://upwork.com",
-      location: "Ukraine",
-      badges: [
-        "Vue.js",
-        "React",
-        "Node.js",
-        "TypeScript",
-        "Tailwind CSS",
-        "SCSS",
-      ],
+      location: "Remote",
+      badges: ["Vue.js", "React", "Node.js", "TypeScript"],
       title: "Front-end Developer",
       start: "Jan 2018",
       end: "Sep 2019",
       description: (
         <>
-          Built custom web applications for international clients on Upwork.
-          <ul className="list-inside list-disc">
-            <li>
-              Delivered 10+ projects across e-commerce, SaaS, and marketing
-              verticals using Vue.js and React.
-            </li>
-            <li>
-              Maintained a top-rated freelancer profile with 100% job success
-              score.
-            </li>
-          </ul>
+          10+ Vue.js and React projects (e-commerce, SaaS, marketing sites). Top
+          Rated, 100% Job Success.
         </>
       ),
     },
   ],
   skills: [
-    "JavaScript / TypeScript",
-    "Vue.js / Nuxt.js (SSR, SSG)",
-    "React / Next.js",
-    "Pinia / Vuex",
-    "CSS / SCSS / Tailwind CSS",
-    "Node.js / Express.js",
-    "GraphQL / Apollo",
-    "PostgreSQL / MongoDB",
-    "Docker",
-    "Vitest / Jest / Playwright",
+    "Vue 3 (Composition API) / Vue 2 (Options API)",
+    "Nuxt (SSR, SSG)",
+    "Pinia / Vuex / Vue Router",
+    "TypeScript / JavaScript (ES2022+)",
+    "Vue 2 → Vue 3 / Vuex → Pinia migrations",
+    "Core Web Vitals / Lighthouse / Performance",
+    "Micro-frontends / Feature-Sliced Design / DDD",
+    "GraphQL / Apollo / REST",
+    "Node.js / Express",
+    "Vitest / Jest / Vue Test Utils",
+    "Playwright (E2E, visual regression)",
     "Vite / Webpack",
-    "CI/CD (GitHub Actions, GitLab CI)",
-    "Core Web Vitals / Performance",
-    "Feature-Sliced Design / DDD",
-    "WCAG / Accessibility",
-    "Agentic Development (Claude Code, MCP Servers)",
-    "AI Agents / Skills / Multi-Agent Workflows",
-    "AI-Powered CI/CD & Visual Regression Testing",
-    "Prompt Engineering / LLM Integration",
+    "Docker / GitHub Actions / GitLab CI",
+    "Sentry",
+    "WCAG 2.1 / Accessibility",
+    "LLM streaming UI (SSE, NDJSON, WebSocket)",
+    "Claude Code (agents, subagents, hooks)",
+    "MCP servers / OpenAI API",
   ],
   projects: [
     {
-      title: "Newerest",
+      title: "AI Chat Lab",
       techStack: [
+        "Nuxt 4",
+        "Vue 3",
         "TypeScript",
-        "Vue.js",
-        "Nuxt.js",
-        "Tailwind CSS",
-        "Node.js",
-        "Strapi",
-        "SEO",
+        "Vitest",
+        "Playwright",
+        "Claude Code",
       ],
       description:
-        "Blog platform about history and technology. Built with Nuxt, Nest, and Strapi for efficient content management.",
-      link: {
-        label: "newerest.space",
-        href: "https://newerest.space/",
-      },
-    },
-    {
-      title: "Platinum Dental",
-      techStack: ["TypeScript", "Nuxt.js", "Tailwind CSS"],
-      description:
-        "Dental clinic website with Telegram bot integration for automated doctor appointment scheduling.",
-      link: {
-        label: "platinum.biz.ua",
-        href: "https://platinum.biz.ua/",
-      },
-    },
-    {
-      title: "Uafunds",
-      techStack: ["TypeScript", "Nuxt.js", "Tailwind CSS", "Vue.js", "Strapi"],
-      description:
-        "Project aggregator for small volunteer organisations to create and share fundraisers.",
-      link: {
-        label: "uafunds.org",
-        href: "https://uafunds.org/",
-      },
+        "Open Nuxt 4 lab for the front-end side of LLM products: chat UI with SSE/NDJSON streaming, cancellation, retry and render batching, plus a reproducible harness (seeded mock model, fault-injecting proxy, throttled Playwright). Found that a naive stream parser loses 13–100% of text under real network chunking.",
     },
     {
       title: "Paideia",
-      techStack: ["TypeScript", "Nuxt.js", "OpenAI API", "Tailwind CSS"],
+      techStack: ["TypeScript", "Nuxt", "OpenAI API"],
       description:
-        "AI-powered English learning platform with vocabulary training and grammar exercises generated by LLMs.",
+        "English learning app that generates exercises with the OpenAI API.",
       link: {
         label: "paideia.space",
         href: "https://paideia.space/",
       },
     },
     {
-      title: "United Ukrainians",
-      techStack: ["TypeScript", "Nuxt.js", "Tailwind CSS", "Vue.js"],
+      title: "Uafunds",
+      techStack: ["TypeScript", "Nuxt", "Strapi"],
       description:
-        "Fundraising platform for the volunteer organisation 'United Ukrainians' with categorized project funding.",
+        "Fundraiser listing for small Ukrainian volunteer organisations.",
       link: {
-        label: "united-ukrainians",
-        href: "https://united-ukrainians.vercel.app/",
+        label: "uafunds.org",
+        href: "https://uafunds.org/",
       },
     },
   ],
