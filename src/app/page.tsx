@@ -16,8 +16,6 @@ export const metadata: Metadata = {
     "Vue.js",
     "Nuxt.js",
     "TypeScript",
-    "React",
-    "Next.js",
     "Agentic Development",
     "Claude Code",
     "MCP Servers",
@@ -83,7 +81,7 @@ export default function ResumePage() {
 
           <WorkExperience work={RESUME_DATA.work} />
 
-          <Skills skills={RESUME_DATA.skills} />
+          <Skills skillGroups={RESUME_DATA.skillGroups} />
 
           <Education education={RESUME_DATA.education} />
 

@@ -1,5 +1,67 @@
 import { GitHubIcon, LinkedInIcon } from "@/components/icons";
 
+const SKILL_GROUPS = [
+  {
+    category: "Frontend",
+    items: [
+      "Vue 3 (Composition API)",
+      "Vue 2 (Options API)",
+      "Nuxt (SSR, SSG)",
+      "Pinia",
+      "Vuex",
+      "Vue Router",
+      "TypeScript",
+      "JavaScript (ES2022+)",
+      "Tailwind CSS",
+    ],
+  },
+  {
+    category: "Architecture & performance",
+    items: [
+      "Vue 2 to Vue 3 and Vuex to Pinia migrations",
+      "Micro-frontends",
+      "Feature-Sliced Design",
+      "DDD",
+      "Core Web Vitals",
+      "Lighthouse",
+      "WCAG 2.1 accessibility",
+    ],
+  },
+  {
+    category: "APIs & backend",
+    items: ["GraphQL", "Apollo", "REST", "Node.js", "Express"],
+  },
+  {
+    category: "Testing",
+    items: [
+      "Vitest",
+      "Jest",
+      "Vue Test Utils",
+      "Playwright (E2E, visual regression)",
+    ],
+  },
+  {
+    category: "Tooling & CI",
+    items: [
+      "Vite",
+      "Webpack",
+      "Docker",
+      "GitHub Actions",
+      "GitLab CI",
+      "Sentry",
+    ],
+  },
+  {
+    category: "AI tooling",
+    items: [
+      "Claude Code (agents, subagents, hooks)",
+      "MCP servers",
+      "OpenAI API",
+      "LLM streaming UI (SSE, NDJSON, WebSocket)",
+    ],
+  },
+] as const;
+
 export const RESUME_DATA = {
   name: "Vasyl Hartaver",
   initials: "VH",
@@ -7,19 +69,15 @@ export const RESUME_DATA = {
   locationLink: "https://www.google.com/maps/place/Szczecin",
   personalWebsiteUrl: "https://telkdev.github.io/cv/",
   about:
-    "Senior Front-end Engineer (Vue 3, Nuxt, TypeScript) with 8+ years of commercial experience. Open to remote roles across the EU and relocation (EU Blue Card).",
+    "Senior Front-end Engineer (Vue 3, Nuxt, TypeScript) with 8+ years of commercial experience. Polish residence permit (Karta pobytu); open to remote EU roles and relocation (EU Blue Card).",
   summary: (
     <>
-      Senior front-end engineer with 8+ years of commercial experience, almost
-      all in the Vue ecosystem. I make large, slow or legacy front-ends fast
-      and maintainable without stopping feature work: led a production Vue 2
-      → Vue 3 migration (Options API/Vuex → Composition API/Pinia), took a
-      production app&apos;s mobile Lighthouse score from 15 to 90, and
-      introduced testing to codebases that had none. Recently I build Claude
-      Code agents (QA, code review) and the harness around them, and run an
-      open lab that measures front-end problems of LLM chat UIs. Polish
-      residence permit (Karta pobytu); used to remote, international teams
-      (Turkey, Germany, USA).
+      Almost all of my experience is in the Vue ecosystem. I make large, slow
+      or legacy front-ends fast and maintainable without stopping feature
+      work: led a production Vue 2 to Vue 3 migration, took a production
+      app&apos;s mobile Lighthouse score from 15 to 90, and introduced testing
+      to codebases that had none. I also build Claude Code agents for QA and
+      code review. Fully remote with teams in Turkey, Germany and the USA.
     </>
   ),
   avatarUrl:
@@ -92,7 +150,7 @@ export const RESUME_DATA = {
               agents follow team standards.
             </li>
             <li>
-              Code review and mentoring for junior and mid-level developers.
+              Review code and mentor junior and mid-level developers.
             </li>
           </ul>
         </>
@@ -217,26 +275,8 @@ export const RESUME_DATA = {
       ),
     },
   ],
-  skills: [
-    "Vue 3 (Composition API) / Vue 2 (Options API)",
-    "Nuxt (SSR, SSG)",
-    "Pinia / Vuex / Vue Router",
-    "TypeScript / JavaScript (ES2022+)",
-    "Vue 2 → Vue 3 / Vuex → Pinia migrations",
-    "Core Web Vitals / Lighthouse / Performance",
-    "Micro-frontends / Feature-Sliced Design / DDD",
-    "GraphQL / Apollo / REST",
-    "Node.js / Express",
-    "Vitest / Jest / Vue Test Utils",
-    "Playwright (E2E, visual regression)",
-    "Vite / Webpack",
-    "Docker / GitHub Actions / GitLab CI",
-    "Sentry",
-    "WCAG 2.1 / Accessibility",
-    "LLM streaming UI (SSE, NDJSON, WebSocket)",
-    "Claude Code (agents, subagents, hooks)",
-    "MCP servers / OpenAI API",
-  ],
+  skillGroups: SKILL_GROUPS,
+  skills: SKILL_GROUPS.flatMap((group) => [...group.items]),
   projects: [
     {
       title: "AI Chat Lab",
@@ -249,7 +289,7 @@ export const RESUME_DATA = {
         "Claude Code",
       ],
       description:
-        "Open Nuxt 4 lab for the front-end side of LLM products: chat UI with SSE/NDJSON streaming, cancellation, retry and render batching, plus a reproducible harness (seeded mock model, fault-injecting proxy, throttled Playwright). Found that a naive stream parser loses 13–100% of text under real network chunking.",
+        "Open Nuxt 4 lab for the front-end side of LLM products: chat UI with SSE/NDJSON streaming, cancellation, retry and render batching, plus a reproducible harness (seeded mock model, fault-injecting proxy, throttled Playwright). Found that a naive stream parser loses 13-100% of text under real network chunking.",
     },
     {
       title: "Paideia",
