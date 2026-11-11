@@ -1,4 +1,3 @@
-import { Badge } from "../../components/ui/badge";
 import {
   Card,
   CardHeader,
@@ -40,10 +39,9 @@ function ProjectLink({ title, link }: ProjectLinkProps) {
         />
       </a>
       <div
-        className="hidden font-mono text-xs underline print:visible"
-        aria-hidden="true"
+        className="hidden font-mono text-xs underline print:block"
       >
-        {link.replace("https://", "").replace("www.", "").replace("/", "")}
+        {link.replace("https://", "").replace("www.", "").replace(/\/$/, "")}
       </div>
     </>
   );
@@ -54,27 +52,15 @@ interface ProjectTagsProps {
 }
 
 /**
- * Renders a list of technology tags used in the project
+ * Renders the technologies used as one comma-delimited plain-text line
  */
 function ProjectTags({ tags }: ProjectTagsProps) {
   if (tags.length === 0) return null;
 
   return (
-    <ul
-      className="mt-2 flex list-none flex-wrap gap-1 p-0"
-      aria-label="Technologies used"
-    >
-      {tags.map((tag) => (
-        <li key={tag}>
-          <Badge
-            className="px-1 py-0 text-[10px] print:px-1 print:py-0.5 print:text-[8px] print:leading-tight"
-            variant="secondary"
-          >
-            {tag}
-          </Badge>
-        </li>
-      ))}
-    </ul>
+    <p className="mt-2 font-mono text-[10px] text-muted-foreground print:text-[8px]">
+      {tags.join(", ")}
+    </p>
   );
 }
 
@@ -91,7 +77,7 @@ interface ProjectCardProps {
 function ProjectCard({ title, description, tags, link }: ProjectCardProps) {
   return (
     <Card
-      className="flex h-full flex-col overflow-hidden border p-3"
+      className="flex h-full flex-col overflow-hidden border p-3 print:break-inside-avoid print:p-2"
       role="article"
     >
       <CardHeader>
@@ -123,19 +109,19 @@ interface ProjectsProps {
  */
 export function Projects({ projects }: ProjectsProps) {
   return (
-    <Section className="scroll-mb-16 print:space-y-4 print:pt-12">
+    <Section className="scroll-mb-16 print:space-y-2">
       <h2 className="text-xl font-bold" id="side-projects">
         Projects
       </h2>
       <div
-        className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3"
+        className="-mx-3 grid grid-cols-1 gap-3 print:!grid-cols-1 print:gap-2 md:grid-cols-2 lg:grid-cols-3"
         role="feed"
         aria-labelledby="side-projects"
       >
         {projects.map((project) => (
           <article
             key={project.title}
-            className="h-full" // Added h-full here
+            className="h-full"
           >
             <ProjectCard
               title={project.title}

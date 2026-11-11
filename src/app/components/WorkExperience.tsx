@@ -1,4 +1,3 @@
-import { Badge } from "@/components/ui/badge";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { Section } from "@/components/ui/section";
 import { RESUME_DATA } from "@/data/resume-data";
@@ -7,34 +6,28 @@ import { cn } from "@/lib/utils";
 type WorkExperience = (typeof RESUME_DATA)["work"][number];
 type WorkBadges = readonly string[];
 
-interface BadgeListProps {
+interface TechStackProps {
   className?: string;
   badges: WorkBadges;
 }
 
 /**
- * Renders a list of badges for work experience
- * Handles both mobile and desktop layouts through className prop
+ * Renders the technologies used as one comma-delimited plain-text line,
+ * kept out of the company heading so ATS parsers do not merge it into
+ * the employer name.
  */
-function BadgeList({ className, badges }: BadgeListProps) {
+function TechStack({ className, badges }: TechStackProps) {
   if (badges.length === 0) return null;
 
   return (
-    <ul
-      className={cn("inline-flex list-none gap-x-1 p-0", className)}
-      aria-label="Technologies used"
+    <p
+      className={cn(
+        "font-mono text-xs text-muted-foreground print:text-[9px]",
+        className,
+      )}
     >
-      {badges.map((badge) => (
-        <li key={badge}>
-          <Badge
-            variant="secondary"
-            className="align-middle text-xs print:px-1 print:py-0.5 print:text-[8px] print:leading-tight"
-          >
-            {badge}
-          </Badge>
-        </li>
-      ))}
-    </ul>
+      {badges.join(", ")}
+    </p>
   );
 }
 
@@ -97,7 +90,6 @@ interface WorkExperienceItemProps {
 
 /**
  * Individual work experience card component
- * Handles responsive layout for badges (mobile/desktop)
  */
 function WorkExperienceItem({ work }: WorkExperienceItemProps) {
   const { company, link, badges, title, start, end, description, location } = work;
@@ -106,12 +98,8 @@ function WorkExperienceItem({ work }: WorkExperienceItemProps) {
     <Card className="py-1 print:py-0">
       <CardHeader className="print:space-y-1">
         <div className="flex items-center justify-between gap-x-2 text-base">
-          <h3 className="inline-flex items-center gap-x-2 font-semibold leading-none print:text-sm">
+          <h3 className="font-semibold leading-none print:text-sm">
             <CompanyLink company={company} link={link} />
-            <BadgeList
-              className="hidden gap-1 sm:inline-flex flex-wrap"
-              badges={badges}
-            />
           </h3>
           <div className="flex-shrink-0">
             <WorkPeriod start={start} end={end} />
@@ -122,17 +110,12 @@ function WorkExperienceItem({ work }: WorkExperienceItemProps) {
         <h4 className="font-mono text-sm font-semibold leading-none print:text-[12px]">
           {title}
         </h4>
+        <TechStack badges={badges} />
       </CardHeader>
 
       <CardContent>
         <div className="mt-2 text-pretty text-xs text-foreground/80 print:mt-1 print:text-[10px]">
           {description}
-        </div>
-        <div className="mt-2">
-          <BadgeList
-            className="-mx-2 flex-wrap gap-1 sm:hidden"
-            badges={badges}
-          />
         </div>
       </CardContent>
     </Card>

@@ -99,7 +99,7 @@ interface PrintContactProps {
 function PrintContact({ contact, personalWebsiteUrl }: PrintContactProps) {
   return (
     <div
-      className="hidden gap-x-2 font-mono text-sm text-foreground/80 print:flex print:text-[12px]"
+      className="hidden flex-wrap gap-x-2 font-mono text-sm text-foreground/80 print:flex print:text-[12px]"
       aria-label="Print contact information"
     >
       {personalWebsiteUrl && (
@@ -132,25 +132,13 @@ function PrintContact({ contact, personalWebsiteUrl }: PrintContactProps) {
           {contact.tel}
         </a>
       )}
-    </div>
-  );
-}
-
-/**
- * Machine-readable contact info for ATS parsers and scrapers.
- * Visually hidden but present in the DOM.
- */
-function MachineReadableContact() {
-  return (
-    <div className="sr-only" aria-hidden="true">
-      <span>Email: {RESUME_DATA.contact.email}</span>
-      <span>Phone: {RESUME_DATA.contact.tel}</span>
-      <span>Location: {RESUME_DATA.location}</span>
-      <span>Website: {RESUME_DATA.personalWebsiteUrl}</span>
-      {RESUME_DATA.contact.social.map((s) => (
-        <a key={s.name} href={s.url}>
-          {s.name}: {s.url}
-        </a>
+      {contact.social.map((social) => (
+        <span key={social.name} className="contents">
+          <span aria-hidden="true">/</span>
+          <a className="underline hover:text-foreground/70" href={social.url}>
+            {social.url.replace("https://", "").replace("www.", "").replace(/\/$/, "")}
+          </a>
+        </span>
       ))}
     </div>
   );
@@ -161,7 +149,7 @@ function MachineReadableContact() {
  */
 export function Header() {
   return (
-    <header className="flex items-center justify-between">
+    <div className="flex items-center justify-between">
       <div className="flex-1 space-y-1.5">
         <h1 className="text-2xl font-bold" id="resume-name">
           {RESUME_DATA.name}
@@ -188,7 +176,6 @@ export function Header() {
           personalWebsiteUrl={RESUME_DATA.personalWebsiteUrl}
         />
 
-        <MachineReadableContact />
       </div>
 
       <Avatar className="size-28" aria-hidden="true">
@@ -198,6 +185,6 @@ export function Header() {
         />
         <AvatarFallback>{RESUME_DATA.initials}</AvatarFallback>
       </Avatar>
-    </header>
+    </div>
   );
 }
